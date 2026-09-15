@@ -12,6 +12,9 @@
 ## Next build — challenge and fairness
 
 - [ ] Play every archetype from spawn to checkpoint; tune jump distances and spike placement from actual failures.
+- [x] Replace the repeated five-stage route with ten authored layouts and a fifteen-level campaign, including pure vertical ascent/descent stages.
+- [x] Turn out-of-bounds falls into a short visible void fall, then a loss/respawn instead of leaving the player stranded.
+- [x] Add kill-callout particles, stage-specific atmospheric tints, fog, and storm lightning.
 - [x] Add a second enemy behavior using the existing Owlet assets: aerial patrol / dive attack.
 - [x] Make combat arenas lock until their enemy wave is cleared, with a clear visual gate.
 - [ ] Add a safe practice room for movement and fireball upgrades.
