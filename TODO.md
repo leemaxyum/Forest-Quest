@@ -12,7 +12,7 @@
 ## Next build — challenge and fairness
 
 - [ ] Play every archetype from spawn to checkpoint; tune jump distances and spike placement from actual failures.
-- [ ] Add a second enemy behavior using the existing Owlet assets: aerial patrol / dive attack.
+- [x] Add a second enemy behavior using the existing Owlet assets: aerial patrol / dive attack.
 - [x] Make combat arenas lock until their enemy wave is cleared, with a clear visual gate.
 - [ ] Add a safe practice room for movement and fireball upgrades.
 
