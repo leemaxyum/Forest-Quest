@@ -1,172 +1,69 @@
-\# Forest Quest
+# High Forest Quest
 
+A fast, browser-based action-platformer built around sharp movement, ranged combat, boss encounters, and repeatable challenge.
 
+> Explore → survive → upgrade → break the boss → climb higher
 
-Forest Quest is a fast-paced 2D action-platformer inspired by classic platforming games. Explore a dangerous forest, battle enemies, defeat powerful bosses, and develop your character through abilities and skill-tree progression.
+## What is playable
 
+- 15-stage campaign run
+- 10 authored stage families: balanced trails, vertical parkour, combat arenas, hazard gauntlets, precision bridges, vertical ascent/descent, storm routes, and zigzag climbs
+- Double jump, directional fireball combat, coins, score, checkpoints, and a campfire trader
+- Mobility, survival, and fireball upgrade paths
+- Patrol enemies, diving Owlets, arena-clear gates, and boss encounters
+- Stage-specific fog, lighting tints, lightning, kill bursts, soul motes, and boss-finisher feedback
+- Fullscreen-ready responsive playfield
 
+## Controls
 
-\## About
+| Action | Keyboard |
+| --- | --- |
+| Move | `A / D` or arrow keys |
+| Jump / double jump | `Space`, `W`, or Up |
+| Cast fireball | `F` |
+| Open trader | `TRADER` button |
+| Expand the game | `FULLSCREEN` button |
 
+## Run locally
 
-
-Journey through a mysterious forest filled with enemies, obstacles, challenging platforming sections, and powerful bosses.
-
-
-
-As you progress, unlock new abilities, improve your combat capabilities, and develop your character through a branching skill tree. Combine movement, platforming, combat, and abilities to overcome increasingly difficult challenges.
-
-
-
-\## Features
-
-
-
-\* 2D platforming and exploration
-
-\* Enemy combat
-
-\* Boss battles
-
-\* Unlockable abilities
-
-\* Fireball and ranged attacks
-
-\* Skill-tree progression
-
-\* Character upgrades
-
-\* Increasing difficulty and challenges
-
-\* Forest-based environments
-
-
-
-\## Gameplay
-
-
-
-The core gameplay loop revolves around:
-
-
-
-\*\*Explore → Fight → Upgrade → Defeat Bosses → Progress\*\*
-
-
-
-Navigate through the forest, defeat enemies, unlock new abilities, and use your upgrades to overcome tougher encounters and bosses.
-
-
-
-\## Abilities \& Progression
-
-
-
-Forest Quest features a progression system that allows players to develop their character throughout the game.
-
-
-
-Players can unlock abilities such as fireballs and use the skill tree to improve their combat capabilities. Different upgrades can be combined to create different approaches to combat and exploration.
-
-
-
-\## Boss Battles
-
-
-
-Boss encounters provide larger challenges that test the player's movement, combat, and ability management.
-
-
-
-Players must learn enemy patterns, avoid attacks, and use their available abilities effectively to defeat each boss.
-
-
-
-\## Built With
-
-
-
-\* HTML5
-
-\* CSS3
-
-\* JavaScript
-
-\* HTML5 Canvas
-
-
-
-\## Running the Game
-
-
-
-Clone the repository:
-
-
+**Prerequisite:** Node.js 18+.
 
 ```bash
-
 git clone https://github.com/leemaxyum/Forest-Quest.git
-
+cd Forest-Quest
+node serve-game.js
 ```
 
+Open [http://localhost:8765](http://localhost:8765).
 
+The game is intentionally dependency-free at runtime except for Phaser, which loads from its CDN in the browser.
 
-Open the project folder and launch `index.html`.
+## Project structure
 
+```text
+index.html       game shell and trader overlay
+style.css        responsive interface styling
+script.js        levels, physics, enemies, bosses, upgrades, effects
+serve-game.js    small local static server
+assets/          supplied pixel-art sprites, forest layers, and platforms
+TODO.md          production board and next milestones
+```
 
+## Current development focus
 
-For the best experience, run the project using a local development server.
+- Playtest every route from spawn to checkpoint and adjust unfair jump/spike combinations
+- Add a safe movement-and-combat practice room
+- Add more enemy behaviors, attack tells, audio, and animation feedback
+- Build a campaign map with completion medals and local progress
 
+## Tech
 
+HTML · CSS · JavaScript · Phaser 3 · HTML5 Canvas
 
-\## Screenshots
+## Status
 
+**Actively in development.** Issues, playtest notes, and focused improvement ideas are welcome.
 
+---
 
-Screenshots and gameplay footage will be added as development continues.
-
-
-
-\## Future Development
-
-
-
-\* Additional levels and forest areas
-
-\* More enemy types
-
-\* Additional boss battles
-
-\* Expanded skill tree
-
-\* New abilities and upgrades
-
-\* Improved animations and visual effects
-
-\* Sound and music improvements
-
-\* Additional gameplay mechanics
-
-
-
-\## Project Status
-
-
-
-\*\*In Development\*\*
-
-
-
-Forest Quest is an ongoing game project. New mechanics, content, and improvements will be added throughout development.
-
-
-
-\---
-
-
-
-\*\*Explore the forest. Master the fight. Complete the quest.\*\*
-
-
-
+*Enter the forest. Learn the route. Take the soul.*
